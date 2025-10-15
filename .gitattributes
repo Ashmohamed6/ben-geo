@@ -1,0 +1,35 @@
+# --- Normalisation des fins de ligne ---
+*          text=auto eol=lf
+
+# Scripts Windows : garder CRLF à l'extraction
+*.bat      text eol=crlf
+*.cmd      text eol=crlf
+
+# Scripts Unix : forcer LF
+*.sh       text eol=lf
+
+# Fichiers de code : expliciter LF
+*.php      text eol=lf
+*.blade.php text eol=lf
+*.js       text eol=lf
+*.ts       text eol=lf
+*.json     text eol=lf
+*.css      text eol=lf
+*.scss     text eol=lf
+*.md       text eol=lf
+*.yml      text eol=lf
+*.yaml     text eol=lf
+*.xml      text eol=lf
+*.env.example text eol=lf
+
+# Binaires : pas de normalisation / pas de diff
+*.png      -text
+*.jpg      -text
+*.jpeg     -text
+*.gif      -text
+*.svg      -text
+*.ico      -text
+*.pdf      -text
+*.ttf      -text
+*.woff     -text
+*.woff2    -text
